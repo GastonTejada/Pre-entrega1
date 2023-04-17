@@ -5,6 +5,7 @@ let articulo3 = '3-cargador inalambrico';
 let articulo4 = '4-parlante bluetooth';
 let articulo5 = '5-cable hdmi';
 let salir     = '0-salir'
+let nArticulos = 0
 let respuesta;
 let listaArticulos = '';
 let listaArticulos2 = '';
@@ -25,6 +26,8 @@ switch( respuesta.toLowerCase()) {
                 {
                         alert('Debe seleccionar un opción valida, valores entre 1 a 5, muchas gracias por su vista');                        
                 }
+                
+                nArticulos = nArticulos + 1
 
                 while (listaArticulos2!='0') {
                 
@@ -34,6 +37,7 @@ switch( respuesta.toLowerCase()) {
                         if (listaArticulos2=='1' || listaArticulos2=='2' || listaArticulos2=='3' || listaArticulos2=='4' || listaArticulos2=='5' || listaArticulos2=='0') {
                                 if (listaArticulos2!='0') {
                                         listaArticulos = listaArticulos+'\n'+listaArticulos2                                        
+                                        nArticulos = nArticulos + 1
                                 }                        
                         } else {
                                 alert('Debe seleccionar un opción valida, valores entre 1 a 5 o 0(cero) para salir');
@@ -42,7 +46,8 @@ switch( respuesta.toLowerCase()) {
                 }
 
                 if (listaArticulos2=='0') {
-                        alert('Su lista de compras contiene los siguientes articulos => '+listaArticulos+'\n'+'Muchas gracias por su visita');                        
+                        alert('Su lista de compras contiene los siguientes articulos => '+
+                        listaArticulos+'\n'+'Cantidad de articulos: '+nArticulos+'\n'+'\n'+'Muchas gracias por su visita');                        
                 }
                 
                 break
