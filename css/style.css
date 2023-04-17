@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+ 
+  html {
+    font-size: 62, 5%;
+  }
+
+body{
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.leyenda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 80;
+    color: black;
+    width: 70%;
+    height: 50%;
+}
